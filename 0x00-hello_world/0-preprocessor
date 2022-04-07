@@ -1,0 +1,4 @@
+#!/bin/bash
+$CFILE = #include <stdio.h> int main() {}
+'echo printf >> c'
+
