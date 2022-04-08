@@ -1,13 +1,19 @@
 #include <stdio.h>
 /**
- *main - execution and termination of program
+ *main - execution 
  *
  *Return: ends main function
  */
 int main(void)
 {
-	cha c
-	for (c = 'A'; c <= 'Z'; ++c)
-	putchar("%c ", c);
-	return 0;
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		putchar(letter)
+	}
+
+	putchar('\n');
+
+	return (0);
 }
