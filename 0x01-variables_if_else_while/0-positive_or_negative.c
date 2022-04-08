@@ -1,5 +1,10 @@
 #include <stdio.h>
-int main()
+/**
+ *main - execution and termination of program
+ *
+ *Return: ends main function
+ */
+int main(void)
 {
 	int n
 	printf("Enter a random number:");
