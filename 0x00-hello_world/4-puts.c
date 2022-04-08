@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main - functions begin
-*  
+*
 *Return: ends main function
 */
 int main(void)
