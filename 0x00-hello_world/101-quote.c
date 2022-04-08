@@ -9,7 +9,7 @@ int main(void)
 	char str_1[] = "and that piece of art is useful";
 	char name[] = "Dora Korpar";
 	int year = 2015;
-	int month  10;
+	int month = 10;
 	int day = 19;
 						
 	fprintf(stderr, "%s\" - %s, %d-%d-%d\n", str_1, name, year, month, day);
