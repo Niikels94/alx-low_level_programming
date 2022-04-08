@@ -1,8 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int n;
-	n = random numbers
+	int n
 	printf("Enter a random number:");
 	scanf("%d", &n);
 	if (n > 0) {
