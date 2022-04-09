@@ -9,9 +9,9 @@ int main(void)
 	int figures;
 	int mynumber;
 
-	for (figures = '0'; figures < '9'; figures++)
+	for (figures = '0'; figures <= '9'; figures++)
 	{
-		for (mynumber = '0'; mynumber < '9'; mynumber++)
+		for (mynumber = '0'; mynumber <= '9'; mynumber++)
 		{
 			if (figures < mynumber)
 			{
