@@ -2,23 +2,35 @@
 /**
  *main - execution
  *
- *Return: Nil results
+ *Return: Nil result
  */
 int main(void)
 {
-	int figures, mynumbers;
+	int digit;
+	int number;
+	int figure;
 
-	for (figures = 0; figures < 10; figures++)
+	for (digit = '0'; digit <= '9'; digit++)
 	{
-		for (mynumbers = 0; mynumbers < 10; mynumbers++)
+		for (number = '0'; number <= '9'; number++)
 		{
-			if (figures != mynumbers)
+			for (figure = '0'; figure <= '9'; figure++)
 			{
-				putchar(figures+mynumbers);
-			}
+				if (digit < number && number < figure)
+				{
+					putchar(digit);
+					putchar(number);
+					putchar(figure);
 
+					if (digit != '7')
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
 		}
 	}
-
+	putchar('\n');
 	return (0);
 }
