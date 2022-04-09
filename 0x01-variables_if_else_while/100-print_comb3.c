@@ -7,20 +7,27 @@
 int main(void)
 {
 	int figures;
-	int mynum;
+	int mynumber;
 
 	for (figures = '0'; figures < '9'; figures++)
 	{
-		for (mynum = figures + 1; mynum < 10; mynum++)
+		for (mynumber = '0'; mynumber < '9'; mynumber++)
 		{
-			putchar((figures % 10) + '0');
-			putchar((mynum % 10) + '0');
-			if (figures == 8 && mynum == 9)
-				continue;
-			putchar(',');
-			putchar(' ');
+			if (figures < mynumber)
+			{
+				putchar(figures);
+				putchar(mynumber);
+
+				if (figures != '8' || (figures == '8' && mynumber == '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
