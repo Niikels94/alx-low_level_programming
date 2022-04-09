@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
- *main - execution 
+ *main - execution
  *
- *Return: ends main function
+ *Return : Nil result
  */
 int main(void)
 {
 	char character;
 
-	for (character = 'a'; character <= 'z'; character++);
+	for (character = 'a'; character <= 'z'; character++)
 	{
 		putchar(character);
 	}
-
+	
 	putchar('\n');
 
 	return (0);
