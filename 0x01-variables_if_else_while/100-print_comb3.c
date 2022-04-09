@@ -6,15 +6,23 @@
  */
 int main(void)
 {
-	int figures, mynumbers;
+	int figures;
+	int mynumber;
 
-	for (figures = 0; figures < 10; figures++)
+	for (figures = '0'; figures < '9'; figures++)
 	{
-		for (mynumbers = 0; mynumbers < 10; mynumbers++)
+		for (mynumber = '0'; mynumber < '9'; mynumber++)
 		{
-			if (figures != mynumbers)
+			if (figures < mynumber)
 			{
-				putchar(figures+mynumbers);
+				putchar(figures);
+				putchar(mynumber);
+
+				if (figures != '8' || (figures == '8' && mynumber == '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
