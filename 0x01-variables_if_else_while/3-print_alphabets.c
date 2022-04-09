@@ -1,23 +1,23 @@
 #include <stdio.h>
 /**
- *main - execution 
+ *main - execution
  *
  *Return: Nil result
  */
 int main(void)
 {
-	char letter;
+	char character;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (character = 'a'; character <= 'z'; character++)
 	{
-		putchar(letter);
+		putchar(character);
 	}
-	for (letter = 'A'; letter <= 'Z'; letter++)
+	for (character = 'A'; character <= 'Z'; character++)
 	{
-		putchar(letter);
+		putchar(character);
 	}
-	
+
 	putchar('\n');
-	
-	0return (0);
+
+	return (0);
 }
