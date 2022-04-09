@@ -6,23 +6,29 @@
  */
 int main(void)
 {
-	int number1, number2;
+	int digit;
+	int number;
 
-	for (number1 = 0: number1 <= 98; number1++)
+	for (digit = 0; digit <= 98; digit++)
 	{
-		for (number2 = number1 + 1; number2 <= 99; number2++)
+		for (number = digit + 1; number <= 99; number++)
 		{
-			putchar((number1 / 10) + '0');
-			putchar((number1 % 10) + '0');
+			putchar((digit / 10) + '0');
+			putchar((digit % 10) + '0');
 			putchar(' ');
-			putchar((number2 / 10) + '0');
-			putchar((number2 % 10) + '0');
-			if (number1 == 98 && number2 == 99)
+			putchar((number / 10) + '0');
+			putchar((number % 10) + '0');
+
+			if (digit == 98 && number == 99)
+			{
 				continue;
+			}
 			putchar(',');
 			putchar(' ');
 		}
 	}
-	putchar('\');
 
-	return (0);}
+	putchar('\n');
+
+	return (0);
+}
