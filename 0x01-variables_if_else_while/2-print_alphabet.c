@@ -2,7 +2,7 @@
 /**
  *main - execution
  *
- *Return : Nil result
+ *Return: Nil result
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 	{
 		putchar(character);
 	}
-	
+
 	putchar('\n');
 
 	return (0);
