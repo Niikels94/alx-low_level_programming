@@ -11,15 +11,15 @@ int main(void)
 	for (figures = 48; figures < 58; figures++)
 	{
 		putchar(figures);
+	}
 		if (figures == 57)
 		{
 			break;
 		}
 		putchar(',');
 		putchar(' ');
-	}
 
-	putchar(' ');
+		putchar(' ');
 
-	return (0);
+		return (0);
 }
