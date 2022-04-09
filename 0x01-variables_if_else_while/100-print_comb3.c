@@ -18,7 +18,7 @@ int main(void)
 				putchar(figures);
 				putchar(mynumber);
 
-				if (figures != '8' || (figures == '8' && mynumber == '9'))
+				if (figures != '8' || (figures == '8' && mynumber != '9'))
 				{
 					putchar(',');
 					putchar(' ');
