@@ -3,7 +3,7 @@
  *main - execution
  *
  *Return: Nil result
- */	
+ */
 int main(void)
 {
 	int figures;
