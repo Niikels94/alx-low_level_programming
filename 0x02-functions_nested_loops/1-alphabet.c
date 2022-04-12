@@ -4,22 +4,19 @@ include "main.h"
  *
  *Return: Nil result
  */
-int main(void)
+void print_alphabet_x10(void)
 {
+	int n, i;
 
-	print_alphabet(void);
-	return (0);
-}
+	i = 0;
 
-void print_alphabet(char alphabets)
-{
-
-	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
+	while (i < 10)
 	{
-		_putchar(alphabets);
+		for (n = 'a'; n <= 'z'; n++)
+		{
+			_putchar(n);
+		}
+		i++;
+		_putchar('\n');
 	}
-
-	_putchar('\n');
-
-	return (0);
 }
