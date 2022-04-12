@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_times_table - Prints the time table of the input, beginning with 0
+ * print_times_table - Prints time table
  *
  * @n: The value of the times table to be printed.
  */
@@ -22,6 +22,8 @@ void print_times_table(int n)
 				pp = nn * mm;
 
 				if (pp <= 99)
+					_putchar(' ');
+				if (pp <= 9)
 					_putchar(' ');
 
 				if (pp >= 100)
