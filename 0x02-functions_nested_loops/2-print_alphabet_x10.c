@@ -6,6 +6,7 @@ include "main.h"
  */
 void print_alphabet_x10(void)
 {
+
 	int n, i;
 
 	i = 0;
