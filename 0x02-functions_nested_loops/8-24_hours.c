@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Jack Bauer -prints everytime of the day
+ * jack_bauer -prints every time of the day
  *
  * Return: Nil return
  */
