@@ -1,6 +1,8 @@
+#include "main.h"
+
 /**
  * _isalpha - checks for alphabetic character
- *
+ *@c: The int to print
  * Return: Nil return
  */
 int _isalpha(int c)
