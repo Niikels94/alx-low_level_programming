@@ -1,13 +1,15 @@
 include "main.h"
+
 /**
- *main - execution of code
+ *print_alphabet_x10 - print alphabet
  *
  *Return: Nil result
  */
 void print_alphabet_x10(void)
 {
 
-	int n, k;
+	int n;
+	int k;
 
 	k = 0;
 
