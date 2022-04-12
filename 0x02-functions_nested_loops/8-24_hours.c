@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Jack Bauer - 8-24_hours.c
+ * Jack Bauer -prints everytime of the day
  *
  * Return: Nil return
  */
@@ -23,6 +23,6 @@ void jack_bauer(void)
 			_putchar (c % 10 + '0');
 			_putchar ('\n');
 		}
-		
+
 	}
 }
