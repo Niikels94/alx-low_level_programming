@@ -7,18 +7,18 @@ include "main.h"
 void print_alphabet_x10(void)
 {
 
-	int n, i;
+	int n, k;
 
-	i = 0;
+	k = 0;
 
-	while (i < 10)
+	while (k < 10)
 	{
 		for (n = 'a'; n <= 'z'; n++)
 		{
 			_putchar(n);
 		}
-		i++;
-		
+
+		k++;
 		_putchar('\n');
 
 	}
