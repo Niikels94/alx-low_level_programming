@@ -1,42 +1,42 @@
 #include "main.h"
 
 /**
- * print_times_table - rints the times table of the input, begining from 0
+ *  * print_times_table - Prints the times table of the input, starting with 0.
  *
  * @n: The value of the times table to be printed.
  */
 void print_times_table(int n)
 {
-	int nn, mm, pp;
+	int num, mult, prod;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (nn = 0; nn <= n; nn++)
+		for (num = 0; num <= n; num++)
 		{
 			_putchar('0');
 
-			for (mm = 1; mm <= n; mm++)
+			for (mult = 1; mult <= n; mult++)
 			{
 				_putchar(',');
 				_putchar(' ');
 
-				pp = nn * mm;
+				prod = num * mult;
 
-				if (pp <= 99)
+				if (prod <= 99)
 					_putchar(' ');
-				if (pp <= 9)
+				if (prod <= 9)
 					_putchar(' ');
 
-				if (pp >= 100)
+				if (prod >= 100)
 				{
-					_putchar((pp / 100) + '0');
-					_putchar(((pp / 10)) % 10 + '0');
+					_putchar((prod / 100) + '0');
+					_putchar(((prod / 10)) % 10 + '0');
 				}
-				else if (pp <= 99 && pp >= 10)
+				else if (prod <= 99 && prod >= 10)
 				{
-					_putchar((pp / 10) + '0');
+					_putchar((prod / 10) + '0');
 				}
-				_putchar((pp % 10) + '0');
+				_putchar((prod % 10) + '0');
 			}
 			_putchar('\n');
 		}
