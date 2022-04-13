@@ -7,10 +7,10 @@ include "main.h"
  */
 void print_alphabet_x10(void)
 {
-	int alphabet;
+	char alphabet;
 	int count;
 
-	count = 0;
+	
 	while (count < 10)
 	{
 		for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
@@ -19,6 +19,7 @@ void print_alphabet_x10(void)
 		}
 
 		count++;
+
 		_putchar('\n');
 	}
 
