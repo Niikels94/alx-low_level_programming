@@ -2,7 +2,6 @@
 
 /**
  * main - execution of code
- *
  * Return: Nil result
  */
 
