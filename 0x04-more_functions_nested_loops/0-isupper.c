@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _isupper - Short description, single line
- * @c: contains value to be compared
- * Return: Nil results
+ * _isupper - checks for uppercase character
+ * @c: print int
+ * Return: Nil
  */
 int _isupper(int c)
 
 {
-	if (c > 'A' && c < 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
