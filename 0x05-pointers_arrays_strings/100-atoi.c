@@ -5,25 +5,25 @@
  *
  * @s: the string to print.
  *
- * Return: Nil
+ * Return: int
  */
 
 int _atoi(char *s)
 {
-	int sign = 1, i = 0;
-	unsigned int res = 0;
+	int n = 1, k = 0;
+	unsigned int b = 0;
 
-	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+	while (!(s[k] <= '9' && s[k] >= '0') && s[k] != '\0')
 	{
-		if (s[i] == '-')
-			sign *= -1;
-		i++;
+		if (s[k] == '-')
+			n *= -1;
+		k++;
 	}
-	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	while (s[k] <= '9' && (s[k] >= '0' && s[k] != '\0'))
 	{
-		res = (res * 10) + (s[i] - '0');
-		i++;
+		b = (b * 10) + (s[k] - '0');
+		k++;
 	}
-	res *= sign;
-i	return (res);
+	b *= n;
+	return (b);
 }
