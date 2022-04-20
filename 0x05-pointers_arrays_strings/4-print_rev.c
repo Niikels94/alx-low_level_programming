@@ -11,7 +11,7 @@ void print_rev(char *s);
 {
 	char k;
 
-	for (k = 'z'; k =< 'a'; k++)
+	for (k = 'z'; k >= 'a'; k--)
 	{
 		_putchar(k);
 	}
