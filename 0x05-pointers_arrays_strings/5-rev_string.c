@@ -4,10 +4,9 @@
  * rev_string - reversed string
  *
  *@s: the string to print.
- *
  */
 
-void rev_string(char *s);
+void rev_string(char *s)
 
 {
 	int k, b, c;
