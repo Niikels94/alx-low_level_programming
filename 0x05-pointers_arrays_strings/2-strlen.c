@@ -4,7 +4,7 @@
  * _strlen - compute the length of a string.
  *
  * @s: length of a string
- * Return: Nil
+ * Return: string length
  */
 
 int _strlen(char *s)
@@ -18,5 +18,5 @@ int _strlen(char *s)
 		k++;
 	}
 
-	return (0);
+	return (k);
 }
