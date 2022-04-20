@@ -9,11 +9,16 @@
 
 void print_rev(char *s);
 {
-	char k;
+	int k = 0;
+	int c;
 
-	for (k = 'z'; k >= 'a'; k--)
+	for (c = 0; s[c] != '\0'; c++)
 	{
-		_putchar(k);
+	}
+
+	for (k = c - 1; k >= 0; k--)
+	{
+		_putchar(s[k]);
 	}
 	_putchar('\n');
 }
