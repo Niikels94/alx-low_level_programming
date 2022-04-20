@@ -4,8 +4,7 @@
  * swap - interchanges two int
  * @a: an integer
  * @b: another integer
- *
- * Return: Always 0.
+ * Return: void
  */
 void swap_int(int *a, int *b);
 {
