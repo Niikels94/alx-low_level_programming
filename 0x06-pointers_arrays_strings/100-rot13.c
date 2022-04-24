@@ -3,27 +3,26 @@
 /**
  *rot13 - encodes a string using rot13.
  *@s: the string to be encoded to rot13.
- *Return: Nil
+ *Return: the pointer to dest
  */
 
 char *rot13(char *s)
 {
-	int a = 0, b = 0;
-	char string_rot13[] = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
-	char string_alpha[] = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (s[a] != '\0')
+	while (*(s + count) != '\0')
 	{
-		do {
-			if (s[a] == string_alpha[b])
+		for (i = 0; i < 52; i++)
+		{
+			if (*(s + count) == alphabet[i])
 			{
-				s[a] = string_rot13[b];
+				*(s + count) = rot13[i];
 				break;
 			}
-			j++;
-		} while (string_alpha[j] != '\0');
-		b = 0;
-		a++;
+		}
+		count++;
 	}
 
 	return (s);
