@@ -21,10 +21,9 @@ char *rot13(char *s)
 				break;
 			}
 			j++;
-		}
-		 while (string_alpha[b] != '\0')
-			 b = 0;
-		 a++;
+		} while (string_alpha[j] != '\0');
+		b = 0;
+		a++;
 	}
 
 	return (s);
