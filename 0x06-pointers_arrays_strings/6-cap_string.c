@@ -7,7 +7,7 @@
  *Return: Nil.
  */
 
-char *cap_string(char *)
+char *cap_string(char s*)
 {
 	int i = 1, j, check;
 
@@ -37,5 +37,5 @@ char *cap_string(char *)
 		}
 		i++;
 	}
-return (s);
+	return (s);
 }
