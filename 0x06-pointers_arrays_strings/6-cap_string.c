@@ -4,10 +4,10 @@
  *cap_string - capitalizes all words of a string.
  *@s: string to use.
  *
- *Return: string.
+ *Return: Nil.
  */
 
-char *cap_string(char *s)
+char *cap_string(char *)
 {
 	int i = 1, j, check;
 
