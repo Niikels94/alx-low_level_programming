@@ -4,7 +4,7 @@
  * _puts_recursion - Prints a string followed by a new line
  * @s: string
  *
- * Return: Nil 
+ * Return: Nil
  */
 
 void _puts_recursion(char *s)
