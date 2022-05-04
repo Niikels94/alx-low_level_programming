@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Execution of code 
+ * main - Execution of code
  *
  * @argc: Counts the arguments supplied to the program
  * @argv: Array of pointers to the strings
