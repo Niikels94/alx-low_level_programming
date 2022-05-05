@@ -5,7 +5,7 @@ include "main.h"
  * _strdup - eturns a pointer to a newly allocated space in memory
  *
  * @str: string
- * Return: pointer to string 
+ * Return: pointer to string
  */
 
 char *_strdup(char *str)
@@ -17,12 +17,13 @@ char *_strdup(char *str)
 		return (NULL);
 
 	for (i = 0; str[i]; i++)
-	;
+		;
 	i++;
 	str1 = malloc(sizeof(char) * i);
 
 	if (str1 == NULL)
 		return (NULL);
+
 
 	for (i = 0; str[i] != '\0'; i++)
 		str1[i] = str[i];
