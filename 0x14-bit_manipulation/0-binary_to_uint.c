@@ -19,8 +19,8 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[k] < '0' || b[k] > '1')
 			return (0);
-		j = 2 * jl + (b[k] - '0');
+		bin_j = 2 * bin_jl + (b[k] - '0');
 	}
 
-	return (j);
+	return (bin_j);
 }
